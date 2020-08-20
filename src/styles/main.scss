@@ -1,7 +1,170 @@
 // Put your scss code here
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import '@fortawesome/fontawesome-free/scss/solid';
+@import '@fortawesome/fontawesome-free/scss/regular';
+@import '@fortawesome/fontawesome-free/scss/brands';
+@import '@fortawesome/fontawesome-free/scss/v4-shims';
+
 footer {
     text-align: center;
     padding: 3px;
     background-color: DarkSalmon;
     color: white;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+  }
+  
+  html {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    //float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+//   .topnav a.active {
+//     background-color: #4CAF50;
+//     color: white;
+//   }
+
+.center {
+    text-align: center;
+}
+
+.centerPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    // width: 50%;
+  }
+
+.multi {
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.multi1 {
+    // height: 100%;
+    width: 33.3%;
+}
+
+#slide{
+	width:96%;
+	}
+	
+* {
+	box-sizing: border-box
+}
+
+.mySlides {
+	display: none
+}
+
+.slideshow-container {
+	// width: 1200px;
+	position: relative;
+	margin: -10px;
+
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.fixed {
+    background-image: url("assets/tucker.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
+    padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0; /* At the top */
+    z-index: 99;
+  }
+
+  #navbar a {
+    float: left;
+    color:white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active/current link */
+  #navbar a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  #navbar #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+
+  #navbar-right {
+    float: right;
+  }
+  
+  .c1 {
+    width: 50%;
+    height: 50%;
   }
